@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <title>Monster Hunter Rise Infotool</title>
+            <link rel="stylesheet" href="database.css" type="text/css">
+            <script src="database.js"></script>
+            <meta charset="utf-8">
+            <meta name="author" content="Nedelcu Stefan Daniel">
+            <meta name="description" content="Some information about a few monsters in Monster Hunter Rise">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    </head>
+    <body>
+        <header>
+            <h1>Monster Hunter Rise Sunbreak</h1>
+            <h2>Information tool</h2>
+            <nav>
+                <div class="menu">
+                    <button>Menu</button>
+                    <ul>
+                        <li><a href="index.html">Home page</a></li>
+                        <li><a href="monsters.html">Monsters</a></li>
+                        <li><a href="database.html">Database </a></li>
+                    </ul>
+                </div>
+                <button class="create" id="openButton">Create</button>
+            </nav>
+        </header>
+        <div id='modalOverlay'>
+            <div class='modal'>
+              <h2>Introduceti un monstru: </h2>
+              <div class='modal-content'>
+              <form class="createMonster">
+                <label>Name: </label>
+                <input type="text" required name='Name'/>
+                <label>Category: </label>
+                <input type="text" required name='Category'/>
+                <label>Drops: </label>
+                <ul>
+            
+                    <div>
+                        <button class="dropbutton" id="minButton">-              
+                        </button>
+                        <button class="dropbutton" id="addButton">+
+                        </button>
+                    </div>
+                </ul>
+                <label>Difficulty: </label>
+                <input type="number" required max='10' min='1' name='Difficulty'/>
+                <label>Elder Dragon: </label>
+                <input type="checkbox" name='Elder Dragon'/>
+                <br></br>
+                <button type="submit" class="dropbutton">Submit</button>
+              </form>
+              <button class="dropbutton" id="closeButton">Close</button>
+              </div>
+            </div>
+            </div>
+        <main>
+            <ul id="forms">
+            </ul>
+        </main>
+        <footer>
+            <p>Site made by:Nedelcu Stefan Daniel</p>
+        </footer>
+    </body>
+</html>

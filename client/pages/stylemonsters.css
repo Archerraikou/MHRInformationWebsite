@@ -1,0 +1,108 @@
+body {
+    background-image: url("img/background.jpg");
+    background-repeat:no-repeat;
+    background-color:sandybrown;
+    background-size:cover;
+    background-attachment:fixed;
+    background-origin:border-box;
+    background-position: center center;
+    display: flex;
+    row-gap:1em;
+    flex-direction: column;
+    color:white;
+    font-family: sans-serif;
+}
+header {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    border:solid black 0.2em;
+    background-color:rgba(0, 0, 0,0.8);
+}
+main {
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(8em, 14em) );
+    align-content: space-around;
+    grid-auto-rows:auto;
+    grid-auto-flow: dense;
+    justify-items: stretch;
+    border:solid black 0.2em;
+    background-color:rgba(0,0,0,0.8);
+    font-size: xx-large;
+    text-align: center;
+}
+footer {
+    padding-right: 1em;
+    text-align: right;
+    border:solid black 0.2em;
+    background-color:rgba(0,0,0,0.8);
+}
+.menu {
+    display:inline-block;
+    left:1em;
+    flex-direction: column;
+    top:1em;
+    gap: 0;
+    position:fixed;
+    text-align:start;
+    z-index:1;
+}
+.menu ul{
+    display:none;
+    position:relative;
+    margin-top: 2%;
+    list-style-type:none;
+    padding-left: 0;
+    background-color:rgb(238, 207, 32);
+}
+.menu button{
+    background:yellow;
+    border:0;
+    font-size:2em;
+    font-family:sans-serif;
+    border: solid black 0.1em;
+    border-radius: 5%;
+}
+.menu:hover button{
+    transform:scale(1.1) translate(0.1em,0);
+    background-color:rgb(238, 207, 32);
+}
+.menu:hover ul{
+    display:block;
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    background-color: rgb(238, 207, 32);
+    font-size:larger;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    border:solid black 0.15em;
+}
+summary img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 30em;
+    align-self: center;
+    position: relative;
+    overflow:auto;
+}
+@media only screen and (max-width:500px) and (max-height:500px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:800px) and (min-width:500px) and (max-height:500px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+details > summary{
+    list-style-type: none;
+    border:none;
+}

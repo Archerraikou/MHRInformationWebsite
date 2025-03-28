@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monster Hunter Rise Infotool</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="index.js"></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Nedelcu Stefan Daniel">
+    <meta name="description" content="Some information about Monster Hunter Rise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Monster Hunter Rise Sunbreak</h1>
+        <h2>Information tool</h2>
+        <nav>
+            <div class="menu">
+                <button>Menu</button>
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="monsters.html">Monsters</a></li>
+                    <li><a href="database.html">Database </a></li>
+                </ul>
+            </div>
+        </nav>
+        <button id="loginButton">Login</button>
+    </header>
+    <div id='modalOverlay'>
+        <div class='modal'>
+          <h2>Login: </h2>
+          <div class='modal-content'>
+          <form id="login">
+            <label>Username: </label>
+            <input type="text" required name='username'/>
+            <label>Password: </label>
+            <input type="password" required name='password'/><br><br>
+            <button type="submit" class="dropbutton">Submit</button>
+            <button id="register" class="dropbutton">Register</button>
+          </form>
+          <button class="dropbutton" id="closeButton">Close</button>
+          </div>
+        </div>
+        </div>
+    <main>
+        <figure>
+            <img id="logo" src="img/logo.jpg" alt="Monster Hunter Rise Sunbreak logo">
+        </figure>
+        <article>
+            <h2><img class="HIcon" src="img/HIcon.png" alt="Icon">About Monster Hunter Rise</h2>
+            <p>Monster Hunter Rise is the latest entry in the wildly popular Action RPG Series. Following the success of
+                Monster Hunter World, Capcom reiterates on its tried and true formula, once again evolving the series
+                and taking it to new heights. Monster Hunter Rise is set in the colorful Kamura Village, an all-new
+                serene mountain locale that attracts visitors with its unique culture and innovative hunting
+                technologies. After hunters equip their armor and select from one of the various weapon types, all-new
+                hunting grounds await, including the ancient Shrine Ruins and more. As players defeat monsters and
+                progress through the game, items from fallen foes can be used to craft unique weapons and armor that
+                will increase their chances of future success and survival. Hunters can tackle these challenges solo, or
+                with up to three other players in local or cooperative online play.</p>
+        </article>
+        <section>
+            <h2><img class="HIcon" src="img/HIcon.png" alt="Icon">Weapon types</h2>
+            <figure>
+                <ul>
+                    <li>
+                        <svg viewbox="0 0 2000 3000" height="20em" width="10em">
+                            <path id="longsword"
+                                d="M0 2800 L300 3000 L400 2700 L100 2500 L0 2800 L100 2500 L0 2400 L50 2200 L700 2600 L550 2800 L400 2700 L550 2800 L700 2600 L500 2500 L1600 600 Q1700 200,1650 0 L270 2300"
+                                fill="gray" stroke="black" stroke-width="30"></path>
+                        </svg>
+                        <br>
+                        Long Sword
+                    </li>
+                    <li>
+                        <svg id="SnS" viewbox="0 0 3000 2100" height="10em" width="15em">
+                            <path d="M300 2100 L300 1800 L 850 1800 L 850 2100 Z" fill="saddlebrown" stroke="black"
+                                stroke-width="50"></path>
+                            <path d="M 100 1800 L 100 1600  L 1000 1600 L 1000 1800 Z" fill="saddlebrown" stroke="black"
+                                stroke-width="50"></path>
+                            <path d="M 350 1600 L 350 900 Q 350 550, 800 0 L800 1600 Z" fill="gray" stroke="black"
+                                stroke-width="50"></path>
+                            <circle cx="2000" cy="1050" r="900" fill="gray" stroke="black" stroke-width="60"></circle>
+                            <rect width="900" height="600" x="1550" y="750" fill="white" stroke="black"
+                                stroke-width="100"></rect>
+                        </svg>
+                        <br>
+                        Sword and Shield
+                    </li>
+                    <li>
+                        <img src="img/CB.png" alt="CB icon">
+                        <br>
+                        Charge Blade
+                    </li>
+                    <li>
+                        <div class="list">
+                            <img src="img/DB.png" alt="DB icon">
+                            <img src="img/GS.png" alt="GS icon">
+                            <img src="img/IG.png" alt="IG icon">
+                            <img src="img/SA.png" alt="SA icon">
+                            <img src="img/HH.png" alt="HH icon">
+                        </div>
+                    </li>
+                </ul>
+            </figure>
+        </section>
+        <article>
+            <h2><img class="HIcon" src="img/HIcon.png" alt="Icon">About the weapons</h2>
+            <section>
+                <h3><img class="HIcon" src="img/GS.png" alt="Icon">Great Sword</h3>
+                <p>Large, powerful but slow heavy-damagers. This massive blade prioritizes damage over speed, boasting
+                powerful swings and staggering blows. There are few weapons as intimidating as the Greatsword, as it has
+                low mobility, but with the right tips and tricks, players can overcome this weapon's shortcomings. The
+                Greatsword is one of the most classic weapons in the Monster Hunter series, and even if it's a slow tool
+                in nature, over the years many improvements in mobility helped it to retain its efficiency at all times.
+                Monster Hunter Rise further improves upon that with many different Skills and Abilities that will change
+                depending on your preferences. But regardless of what's your approach in battle, one thing is for sure:
+                The Greatsword is at its best moment. </p>
+                <img class="guideimg" src="img/GreatSwordGuide.png" alt="Great Sword gameplay photo">
+            </section>
+            <section>
+                <h3><img class="HIcon" src="img/LS.png" alt="Icon">Longsword</h3>
+                <p>The Longsword is a very satisfying weapon to use. It's as intimidating as it is large, but offers
+                    more mobility than its size lets on. The weapon's moveset and central gimmick reward the more
+                    aggressive playstyles out there, but there are some pretty neat ways to use the Longsword as a tool
+                    of evasion and counterattacking if you have the timing down. With Rise's silkbinds, the weapon's
+                    playstyle gets even more floaty and chaotic and will be a favorite of those who love to run circles
+                    around their foes. You'll notice that when you have a Longsword equipped, you have a new gauge
+                    available to the right of your sharpness meter. This is your Spirit Gauge.
+                    Your Spirit Gauge will fill automatically as you connect with normal attacks, filling up the white
+                    bar in the middle of the sword-shaped meter. You can use this gauge to perform Spirit Blade attacks
+                    with ZR/RT, which are some of your most powerful attacks, and emit a trailing light from the tip of
+                    your sword. </p>
+                <img class="guideimg" src="img/LSGuide.png" alt="Longsword gameplay photo">
+            </section>
+            <section>
+                <h3><img class="HIcon" src="img/SnS.png" alt="Icon">Sword and Shield</h3>
+                <p>The Sword and Shield is one of Monster Hunter Rise's most versatile weapons. Although it may seem
+                    simple at first, this weapon can do just about anything you need it to, with a fast-paced
+                    close-range playstyle that is extremely rewarding to use once you get the hang of it. The Sword and
+                    Shield is, at first glance, a very basic weapon. Unlike more flashier weapons like the Charge Blade
+                    or Switch Axe, the Sword and Shield has no unique gauge or charging mechanics.
+
+                    While this may make the weapon look uninteresting, the Sword and Shield shines in its simplicity.
+                    With its varied attacks, you can dart around the monster, always on the offensive while stringing
+                    together combos and using a variety of tools for anything the monster can throw at you.
+
+                    In addition, you can block lighter attacks using the shield. Blocking an attack will greatly reduce
+                    the amount of damage it does, but bigger attacks will push you back slightly, knocking you off
+                    balance. Blocking should really only be reserved for situations where you can't dodge the attack.
+
+                    The Sword and Shield's unique mechanic allows you to use items without sheathing your weapon. By
+                    holding the block button and then pressing the use item button, you can consume items without
+                    sheathing the Sword and Shield, letting you get back into the fight faster. </p>
+                <img class="guideimg" src="img/SnSGuide.png" alt="Sword and Shield gameplay photo">
+            </section>
+            <section>
+                <h3><img class="HIcon" src="img/DB.png" alt="Icon">Dual Blades</h3>
+                <p>The Dual Blades are one of the fastest weapons in Monster Hunter Rise, allowing you to dodge around
+                    the monster while remaining on the attack. With swift attacks, the option to dodge between
+                    animations, and aerial abilities, the Dual Blades are the perfect weapon for hunters who like to
+                    keep things fast-paced. The Dual Blades are a fast-paced weapon that can fit into several different
+                    types of builds. Because of their high hit count, elemental and status-applying builds work the
+                    best, but raw-damage builds can be equally strong with the right equipment and circumstances.
+
+                    By pressing ZR, you will enter Demon Mode, draining stamina over time but increasing attack and
+                    movement speed, granting access to new combos and dodges. Managing your various resources is the
+                    core of the Dual Blades' gameplay. Through stamina, Demon Gauge, and sharpness, you'll need to keep
+                    a constant eye on what resources you have, and when to use them.
+
+                    To that end, stamina-boosting armor skills like Constitution or Marathon Runner will greatly
+                    increase the amount of time you are able to spend in Demon Mode. </p>
+                <img class="guideimg" src="img/DBGuide.png" alt="Dual Blades gameplay photo">
+            </section>
+            <section>
+                <h3><img class="HIcon" src="img/CB.png" alt="Icon">Charge Blade</h3>
+                <p>Charge up your phials and knock your enemies down with Charge Blade! The second of two switchy-swappy weapons in
+                the game, the Charge Blade playstyle lets you charge up Phials in Sword Mode, and expend them in Axe Mode! Guard against
+                enemy attacks with the power of your Guard Points, charge up your shield, and blow monsters away with your Amped
+                Elemental Discharge Axe attacks! The Charge Blade is complicated because it needs efficiency with Phials to be
+                effective. Essentially, the player wants to charge Phials when in Sword Mode and then switch to Axe Mode to discharge
+                all of them. They need to be careful not to overheat the Phial Gauge too, or else attacks will literally bounce off
+                monsters. When that Gauge is yellow, that means three Phials are charged; red means five Phials are charged.
+                
+                Something incredibly important to note is that the Charge Blade offers a legit shield accessible through the Sword Mode.
+                The player can utilize Guard Points, blocking and opening up the opportunity for counterattacks, by aiming the shield in
+                the direction of incoming attacks. These are also possible through Morph Slash, which is accessible through the sword
+                and the axe.
+                
+                Despite the weapon being slow to swing, it actually offers solid mobility during Sword Mode. This goes downhill during
+                Axe Mode in exchange for greater power. The Charge Blade is a decent hybrid of defense and offense but definitely
+                requires practice to be used properly.
+                </p>
+                <img class="guideimg" src="img/CBGuide.png" alt="Charge Blade gameplay photo">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Site made by:Nedelcu Stefan Daniel</p>
+    </footer>
+</body>
+
+</html>
